@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\Comic_pics\Batman.jpeg" />
+    <None Include="wwwroot\lib\Comic_pics\Blackpanther.jpg" />
+    <None Include="wwwroot\lib\Comic_pics\GreenArrow.jpg" />
+    <None Include="wwwroot\lib\Comic_pics\GreenLanter.jpg" />
+    <None Include="wwwroot\lib\Comic_pics\Harley.jpg" />
+    <None Include="wwwroot\lib\Comic_pics\Hulk.jpg" />
+    <None Include="wwwroot\lib\Comic_pics\Iron man.jpg" />
+    <None Include="wwwroot\lib\Comic_pics\Spiderman.jpg" />
+    <None Include="wwwroot\lib\Comic_pics\Superman.jpg" />
+    <None Include="wwwroot\lib\Comic_pics\TheFlash.jpeg" />
+  </ItemGroup>
+
+</Project>

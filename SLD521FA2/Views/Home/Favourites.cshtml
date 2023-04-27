@@ -1,0 +1,228 @@
+﻿@{
+    ViewData["Title"] = "Favourites";
+}
+
+<div class= "container d-flex">
+    <div class="row">
+         <div class="col-3">
+                <div class="card">
+                        <img class="card-img-top" src="~/lib/Comic_pics/Batman.jpeg" alt="Card image" height="400px">
+                <div class="card-body" id="Batman">
+                            <h5 class="card-title">Batman</h5>
+                    <p></p>
+                    <button type="button" class="btn btn-secondary" onclick="change_card1()">More Info</button>
+                        </div>
+                </div>
+         </div>
+         <div class="col-3">
+                <div class="card">
+                        <img class="card-img-top" src="~/lib/Comic_pics/Superman.jpg" alt="Card image" height="400px">
+                <div class="card-body" id="Superman">
+                            <h5 class="card-title">Superman</h5>
+                    <p></p>
+                    <button type="button" class="btn btn-secondary" onclick="change_card2()">More Info</button>
+                        </div>
+                </div>
+         </div>
+         <div class="col-3">
+                <div class="card">
+                        <img class="card-img-top" src="~/lib/Comic_pics/GreenArrow.jpg" alt="Card image" height="400px">
+                <div class="card-body" id="GreenArrow">
+                            <h5 class="card-title">Green Arrow</h5>
+                    <p></p>
+                    <button type="button" class="btn btn-secondary" onclick="change_card3()">More Info</button>
+                        </div>
+                </div>
+        </div>
+        <div class="col-3">
+                <div class="card">
+                        <img class="card-img-top" src="~/lib/Comic_pics/TheFlash.jpeg" alt="Card image" height="400px">
+                <div class="card-body" id="TheFlash">
+                    <h5 class="card-title">The Flash</h5>
+                    <p></p>
+                    <button type="button" class="btn btn-secondary" onclick="change_card4()">More Info</button>
+                        </div>
+                </div>
+        </div>
+        <div class="col-3">
+                <div class="card">
+                        <img class="card-img-top" src="~/lib/Comic_pics/Hulk.jpg" alt="Card image" height="400px">
+                <div class="card-body" id="Hulk">
+                            <h5 class="card-title">Hulk</h5>
+                    <p></p>
+                    <button type="button" class="btn btn-secondary" onclick="change_card5()">More Info</button>
+                        </div>
+                </div>
+        </div>
+        <div class="col-3">
+                <div class="card">
+                        <img class="card-img-top" src="~/lib/Comic_pics/Harley.jpg" alt="Card image" height="400px">
+                <div class="card-body" id="Harley">
+                            <h5 class="card-title">Harley Quinn</h5>
+                    <p></p>
+                    <button type="button" class="btn btn-secondary" onclick="change_card6()">More Info</button>
+                        </div>
+                </div>
+        </div>
+        <div class="col-3">
+                <div class="card">
+                        <img class="card-img-top" src="~/lib/Comic_pics/GreenLanter.jpg" alt="Card image" height="400px">
+                <div class="card-body" id="GreenLantern">
+                            <h5 class="card-title">Green Lantern</h5>
+                    <p></p>
+                    <button type="button" class="btn btn-secondary" onclick="change_card7()">More Info</button>
+                        </div>
+                </div>
+        </div>
+        <div class="col-3">
+                 <div class="card">
+                        <img class="card-img-top" src="~/lib/Comic_pics/Spiderman.jpg" alt="Card image" height="400px">
+                <div class="card-body" id="Spiderman">
+                            <h5 class="card-title">Spiderman</h5>   
+                            <p></p>
+                    <button type="button" class="btn btn-secondary" onclick="change_card()">More Info</button>
+                        </div>
+                 </div>
+        </div>
+    </div>
+</div>
+
+ <script type="text/javascript">
+     
+ function change_card1()
+ {
+        let isChanged = false;
+        const originalContent = document.getElementById("Batman").innerHTML = "Batman is a DC Comics superhero who uses his wealth, intelligence, and martial arts training to fight crime in Gotham City. He is often depicted as a dark, brooding figure who is haunted by the murder of his parents and is dedicated to preventing others from experiencing similar tragedies.";
+
+        function changeCardContent() {
+            const cardTop = document.getElementById("Batman");
+            if (isChanged) {
+                cardTop.innerHTML = originalContent;
+                isChanged = false;
+            } else {
+                cardTop.innerHTML = "New Card Top Content";
+                isChanged = true;
+            }
+        }
+
+ }
+    
+ function change_card2() {
+        let isChanged = false;
+        const originalContent = document.getElementById("Superman").innerHTML = "Superman is a DC Comics superhero who possesses superhuman strength, speed, agility, and various other powers. He uses his abilities to protect Metropolis and defend the Earth against various threats, including his arch-nemesis, Lex Luthor.";
+
+        function changeCardContent() {
+            const cardTop = document.getElementById("Superman");
+            if (isChanged) {
+                cardTop.innerHTML = originalContent;
+                isChanged = false;
+            } else {
+                cardTop.innerHTML = "New Card Top Content";
+                isChanged = true;
+            }
+        }
+
+    }
+    
+  function change_card3() {
+        let isChanged = false;
+        const originalContent = document.getElementById("GreenArrow").innerHTML = "Green Arrow is a DC Comics character who is an expert archer and skilled fighter. He uses his bow and arrows, as well as his intelligence and agility, to fight crime and protect Star City.";
+
+        function changeCardContent() {
+            const cardTop = document.getElementById("GreenArrow");
+            if (isChanged) {
+                cardTop.innerHTML = originalContent;
+                isChanged = false;
+            } else {
+                cardTop.innerHTML = "New Card Top Content";
+                isChanged = true;
+            }
+        }
+
+    } 
+    
+    function change_card4() {
+        let isChanged = false;
+        const originalContent = document.getElementById("TheFlash").innerHTML = "The Flash is a DC Comics superhero who possesses superhuman speed and the ability to move and think at incredible speeds. He uses his powers to protect Central City and defend against various threats.";
+
+        function changeCardContent() {
+            const cardTop = document.getElementById("TheFlash");
+            if (isChanged) {
+                cardTop.innerHTML = originalContent;
+                isChanged = false;
+            } else {
+                cardTop.innerHTML = "New Card Top Content";
+                isChanged = true;
+            }
+        }
+
+    } 
+    
+    function change_card5() {
+        let isChanged = false;
+        const originalContent = document.getElementById("Hulk").innerHTML = "The Hulk is a Marvel Comics character who is the alter-ego of Dr. Bruce Banner. When Banner becomes angry or stressed, he transforms into the Hulk, a green-skinned monster with superhuman strength and durability.";
+
+        function changeCardContent() {
+            const cardTop = document.getElementById("Hulk");
+            if (isChanged) {
+                cardTop.innerHTML = originalContent;
+                isChanged = false;
+            } else {
+                cardTop.innerHTML = "New Card Top Content";
+                isChanged = true;
+            }
+        }
+
+    } 
+    
+    function change_card6() {
+        let isChanged = false;
+        const originalContent = document.getElementById("Harley").innerHTML = "Harley Quinn is a DC Comics character who first appeared in Batman: The Animated Series. She is a former psychiatrist turned supervillain who is often depicted as the Joker's romantic interest and accomplice.";
+
+        function changeCardContent() {
+            const cardTop = document.getElementById("Harley");
+            if (isChanged) {
+                cardTop.innerHTML = originalContent;
+                isChanged = false;
+            } else {
+                cardTop.innerHTML = "New Card Top Content";
+                isChanged = true;
+            }
+        }
+
+    } 
+    
+    function change_card7() {
+        let isChanged = false;
+        const originalContent = document.getElementById("GreenLantern").innerHTML = "Green Lantern is a DC Comics superhero who possesses a power ring that allows him to create constructs out of green energy. He uses this ring to protect the universe and defend against various threats.";
+
+        function changeCardContent() {
+            const cardTop = document.getElementById("GreenLantern");
+            if (isChanged) {
+                cardTop.innerHTML = originalContent;
+                isChanged = false;
+            } else {
+                cardTop.innerHTML = "New Card Top Content";
+                isChanged = true;
+            }
+        }
+
+    } 
+    
+    function change_card() {
+        let isChanged = false;
+        const originalContent = document.getElementById("Spiderman").innerHTML = "Spider-Man is a fictional superhero created by Marvel Comics. He has the ability to climb walls and shoot webs from his wrists, which he uses to fight crime in New York City.";
+
+        function changeCardContent() {
+            const cardTop = document.getElementById("Spiderman");
+            if (isChanged) {
+                cardTop.innerHTML = originalContent;
+                isChanged = false;
+            } else {
+                cardTop.innerHTML = "New Card Top Content";
+                isChanged = true;
+            }
+        }
+
+    }
+ </script>
